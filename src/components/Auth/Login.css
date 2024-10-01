@@ -1,0 +1,177 @@
+.bg-container {
+	height: 100vh;
+	background-image: url('../../assets/bg-img.jpg');
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid #eee;
+}
+
+.auth-container {
+	width: 100%;
+	max-width: 400px;
+	margin: 80px auto;
+	padding: 30px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	box-sizing: border-box;
+	transition: transform 0.3s ease-in-out;
+}
+
+.auth-container:hover {
+	transform: translateY(-5px);
+}
+
+.auth-container h2 {
+	text-align: center;
+	margin-bottom: 25px;
+	color: #333333;
+	font-size: 24px;
+}
+
+.auth-container form {
+	display: flex;
+	flex-direction: column;
+}
+
+.auth-container label {
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #555555;
+	font-size: 14px;
+}
+
+.auth-container input {
+	padding: 10px 15px;
+	margin-bottom: 15px;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	font-size: 16px;
+	transition: border-color 0.3s;
+}
+
+.auth-container input:focus {
+	border-color: #007BFF;
+	outline: none;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.error {
+	color: #ff0000;
+	margin-bottom: 10px;
+	font-size: 13px;
+	text-align: left;
+}
+
+.auth-container button[type="submit"] {
+	padding: 12px;
+	background-color: #007BFF;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.auth-container button[type="submit"]:disabled {
+	background-color: #cccccc;
+	cursor: not-allowed;
+}
+
+.auth-container button[type="submit"]:hover:not(:disabled) {
+	background-color: #0056b3;
+	transform: scale(1.02);
+}
+
+.auth-container .social-login {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+.auth-container .social-login button {
+	flex: 1;
+	padding: 10px;
+	margin: 0 5px;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.auth-container .social-login button .icon {
+	margin-right: 8px;
+	font-size: 18px;
+}
+
+.auth-container .social-login button.google {
+	background-color: #DB4437;
+}
+
+.auth-container .social-login button.google:hover {
+	background-color: #a33329;
+	transform: scale(1.02);
+}
+
+.auth-container .social-login button.facebook {
+	background-color: #3B5998;
+}
+
+.auth-container .social-login button.facebook:hover {
+	background-color: #2d4373;
+	transform: scale(1.02);
+}
+
+.auth-container .forgot-password {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.auth-container .forgot-password button {
+	background: none;
+	border: none;
+	color: #007BFF;
+	cursor: pointer;
+	text-decoration: underline;
+	font-size: 14px;
+	padding: 0;
+}
+
+.auth-container .forgot-password button:hover {
+	color: #0056b3;
+}
+
+.signup-text {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.signup-btn {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.signup-btn:hover {
+	text-decoration: underline;
+}
+
+.signin-text {
+	text-align: center;
+	margin-block: 1rem;
+}
+
+.signin-btn {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.signin-btn:hover {
+	text-decoration: underline;
+}
