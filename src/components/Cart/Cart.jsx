@@ -12,12 +12,19 @@ const Cart = () => {
   const navigate = useNavigate();
 
   const handleCheckout = () => {
-    cartItems.forEach((item) => {
-      item.copies = (item.copies || 1) - 1;
-      if (item.copies <= 0) {
-        item.availability = "Not available";
+    const updatedCartItems = cartItems.map((item) => {
+      const updatedItem = {
+        ...item,
+        copies: (item.copies || 1) - 1,
+      };
+
+      if (updatedItem.copies <= 0) {
+        updatedItem.availability = "Not available";
       }
+
+      return updatedItem;
     });
+
     toast.success("Successfully bought books");
     dispatch(clearCart());
     navigate("/");
